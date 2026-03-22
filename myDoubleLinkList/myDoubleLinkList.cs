@@ -3,14 +3,14 @@ using System.Collections;
 
 namespace myDoubleLinkList
 {
-    public class DoubleLinkList<T> : IEnumerable<T>
+    public class myDoubleLinkList<T> : IEnumerable<T>
     {
         private Node<T>? head;
         private Node<T>? tail;
 
         public int Count { get; private set; }
 
-        public DoubleLinkList()
+        public myDoubleLinkList()
         {
             head = null;
             tail = null;
