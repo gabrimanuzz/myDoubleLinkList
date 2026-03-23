@@ -102,7 +102,13 @@ namespace myDoubleLinkList
             return -1;
         }
 
-
+        public int Remove(T item)
+        {
+            int result = Find(item);
+            if (result == -1) return -1;
+            RemoveAt(result);
+            return 0;
+        }
 
         public IEnumerator<T> GetEnumerator()
         {
